@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>big basket</title>
+
+    <style>
+        /* style the header with background orange now*/
+        .header {
+            overflow: hidden;
+            background-color:orange;
+            padding: 10px 5px;
+
+        }
+        /* style the header link*/
+        .header a{
+            float: left;
+            color: black;
+            text-align:center;
+            padding: 8px;
+            text-decoration: none;
+            font-size: 18px;
+            line-height: 22px;border-radius: 6px;
+        }
+        .header a.logo{
+            font-size: 24px;
+            font-weight: bold;
+        }
+        /*change the background color hover*/
+        .header a:hover{background-color: rgb(221, 48, 48);
+            color: white;
+            cursor: pointer;
+            transition: background-colo 0.14s;
+
+        }
+        /* style the active link*/
+        .header a.active{
+            background-color: rgb(22, 1, 5);
+            color: white;
+            transition: background-color 0.12s;
+            
+        }
+        .header-right{
+            float: right;
+        }
+        .header a {
+    text-align: left;}
+
+
+
+    /* this is the welcome csss animation hover*/
+    .welcome-page{
+ text-align: center;
+color: rgb(205, 222, 236);
+
+ display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 20px auto;
+  width: 250px;
+  height: 250px;
+  background: rgb(255, 255, 255);
+  border-radius: 75px;
+  font-family:fantasy;
+  font-size: 55px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  transition: 1s box-shadow;
+}
+
+div:hover.welcome-page{
+  box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
+}
+
+div:hover.welcome-page::before, div:hover.welcome-page::after {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: #150eeb;
+  border-radius: 75px;
+  z-index: -1;
+  animation: 1s clockwise infinite;
+}
+
+div:hover.welcome-page:after {
+  background: #ef1212;
+  animation: 2s counterclockwise infinite;
+}
+
+@keyframes clockwise {
+  0% {
+    top: -5px;
+    left: 0;
+  }
+  12% {
+    top: -2px;
+    left: 2px;
+  }
+  25% {
+    top: 0;
+    left: 5px;    
+  }
+  37% {
+    top: 2px;
+    left: 2px;
+  }
+  50% {
+    top: 5px;
+    left: 0;    
+  }
+  62% {
+    top: 2px;
+    left: -2px;
+  }
+  75% {
+    top: 0;
+    left: -5px;
+  }
+  87% {
+    top: -2px;
+    left: -2px;
+  }
+  100% {
+    top: -5px;
+    left: 0;    
+  }
+}
+
+@keyframes counterclockwise {
+  0% {
+    top: -5px;
+    right: 0;
+  }
+  12% {
+    top: -2px;
+    right: 2px;
+  }
+  25% {
+    top: 0;
+    right: 5px;    
+  }
+  37% {
+    top: 2px;
+    right: 2px;
+  }
+  50% {
+    top: 5px;
+    right: 0;    
+  }
+  62% {
+    top: 2px;
+    right: -2px;
+  }
+  75% {
+    top: 0;
+    right: -5px;
+  }
+  87% {
+    top: -2px;
+    right: -2px;
+  }
+  100% {
+    top: -5px;
+    right: 0;    
+  }
+
+
+    }
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <a href="#default" class="logo">CompanyLogo</a>
+        <div class="header-right">
+          <a class="active" href="#home">Home</a>
+          <a href="#contact">Contact</a>
+          <a href="#about">About</a>
+        </div>
+      </div>
+      <p>
+         <div class="welcome-page">TO IN</div>
+      </p>
+      
+
+
+
+
+
+</body>
+</html> 
